@@ -7,6 +7,7 @@ TMP_IMG=$TARGET_IMG.tmp
 SECTOR_SIZE=512
 LOOP_DEV="/dev/loop2"
 TMP_IMG_SIZE="4G"
+IMG_SPARE_SPACE="200M"
 MNT_POINT=/mnt/pi
 
 # Check if inputs are given
@@ -38,6 +39,7 @@ function clean {
     
     sudo rm $MNT_POINT/usr/bin/qemu-arm-static > /dev/null 2>&1
     sudo umount $MNT_POINT > /dev/null 2>&1
+    sync
     sudo rm $MNT_POINT -r > /dev/null 2>&1
 
     exit -1
