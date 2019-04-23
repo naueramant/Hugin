@@ -21,6 +21,15 @@ Make sure you have a [compatible 4+ GB SD card](http://elinux.org/RPi_SD_cards).
 
 The Pi needs a [2.5 Amp power source](https://www.raspberrypi.org/documentation/hardware/raspberrypi/power/README.md). Most modern USB chargers you'll have laying around will work, but an older/cheaper one may not.
 
+## Development
+
+TBA
+
+## Common issues
+
+- **I get a kernel panic on boot, or the image keeps crashing.** The Raspberry Pi is somewhat picky about about its SD cards. It's also possible the SD card has a bad sector in a critical place, and `dd` wasn't be able to tell you. Double-check that you're using [a blessed SD card](http://elinux.org/RPi_SD_cards), and try flashing the image again.
+- **I see a "rainbow square" or "yellow lightning" in the top right corner of the screen, and the device seems unstable.** This usually means the Pi isn't getting enough amps from your power supply. This is sometimes the case in more exotic setups (e.g. using the USB port of your display to power the Pi) or with cheap power supplies. Try another one.
+
 ## Acknowledgements
 
 This project is strongly inspired by [chilipie-kiosk](https://github.com/futurice/chilipie-kiosk).
