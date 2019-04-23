@@ -23,7 +23,7 @@ if [ -z "$TARGET_IMG" ]; then
     exit -1
 fi
 
-for CMD in qemu-arm-static fdisk parted resize2fs e2fsck
+for CMD in qemu-arm-static parted resize2fs e2fsck
 do
     if [ -z "$(command -v $CMD)" ]; then
         echo "Missing $CMD, please install"
@@ -46,7 +46,7 @@ function cleanup {
 }
 
 function error {
-    echo "An error accoured, exiting..."
+    echo "An error occurred, exiting..."
     cleanup
     exit -1
 }
