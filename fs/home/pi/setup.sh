@@ -1,7 +1,7 @@
 #! /bin/bash
 
 # Safeguard
-if [ "$(command -v raspi-config)" ]; then
+if [ -z "$(command -v raspi-config)" ]; then
     echo "Script not running on raspbian, exiting..."
     exit -1
 fi
