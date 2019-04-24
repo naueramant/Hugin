@@ -15,5 +15,5 @@ echo "Downloading $ZIP"
 curl -o "$3/$ZIP" "$BASE/$RELEASE/$ZIP"
 
 echo "Extracting $ZIP"
-unzip -f "$3/$ZIP" -d "$3"
+unzip "$3/$ZIP" -d "$3"
 rm "$3/$ZIP"

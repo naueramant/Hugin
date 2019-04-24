@@ -1,4 +1,11 @@
-# Tardis
+
+<div style="text-align: center;">
+    <img src="doc/black_logo.png" height=200>
+</div>
+
+## Screenshots
+
+TBA
 
 ## Features
 
