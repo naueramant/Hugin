@@ -31,7 +31,6 @@ Hugin is a simple to use Raspberry pi dashboard distro for showing multiple page
 3. Decompress it.
 4. Flash the image onto your SD card. We recommend [Etcher](https://etcher.io/) for this: it's delightfully easy to use, cross platform, and will verify the result automatically. If you know what you're doing, you can of course also just `sudo dd bs=1m if=image.img of=/dev/mmcblk0`.
 5. Insert the SD card to your Pi and power it up.
-6. You should land in the [first-boot document](docs/first-boot.md), for further instructions & ideas.
 
 ## Hardware
 
