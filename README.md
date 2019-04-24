@@ -8,13 +8,11 @@ Hugin is a simple to use Raspberry pi dashboard distro for showing multiple page
 ## Screenshots
 
 <p align="center">
+    <img src="doc/screenshot1.png" width=45%>
     <img src="https://via.placeholder.com/1920x1080" width=45%>
     <img src="https://via.placeholder.com/1920x1080" width=45%>
     <img src="https://via.placeholder.com/1920x1080" width=45%>
-    <img src="https://via.placeholder.com/1920x1080" width=45%>
-
 </p>
-
 
 ## Features
 
