@@ -1,7 +1,7 @@
 
-<div style="text-align: center;">
+<p align="center">
     <img src="doc/black_logo.png" height=200>
-</div>
+</p>
 
 ## Screenshots
 
