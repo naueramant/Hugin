@@ -3,9 +3,18 @@
     <img src="doc/black_logo.png" height=200>
 </p>
 
+Hugin is a simple to use Raspberry pi dashboard distro for showing multiple pages and easily orchestrating many screens. 
+
 ## Screenshots
 
-TBA
+<p align="center">
+    <img src="https://via.placeholder.com/1920x1080" width=45%>
+    <img src="https://via.placeholder.com/1920x1080" width=45%>
+    <img src="https://via.placeholder.com/1920x1080" width=45%>
+    <img src="https://via.placeholder.com/1920x1080" width=45%>
+
+</p>
+
 
 ## Features
 
