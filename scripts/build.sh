@@ -58,7 +58,7 @@ trap "error" ERR
 cp $SRC_IMG $TMP_IMG
 
 # Increase tmp image size with 1G
-sudo dd if=/dev/zero bs=1G count=2 >> $TMP_IMG
+sudo dd if=/dev/zero bs=300M count=1 >> $TMP_IMG
 sudo parted $TMP_IMG resizepart 2 100%
 
 sudo losetup --partscan $LOOP_DEV $TMP_IMG
@@ -75,9 +75,6 @@ cp ./fs/* $MNT_POINT -r
 
 # chroot into raspbian and run commands
 sudo systemd-nspawn --bind /usr/bin/qemu-arm-static -qD $MNT_POINT /home/pi/setup.sh
-
-# Shrink image
-# resize2fs -M $LOOP_DEV
 
 # Clean up mounts
 cleanup
