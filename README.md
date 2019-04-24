@@ -16,7 +16,13 @@ Hugin is a simple to use Raspberry pi dashboard distro for showing multiple page
 
 ## Features
 
-TBA
+- **Boots directly to full-screen Chrome** - which will show pages defined in the dashboard
+- **Custom startup graphics** - displays [customizable graphics](home/background.png) instead of console messages during startup
+- **Lightweight window manager** - uses [Matchbox](https://www.yoctoproject.org/tools-resources/projects/matchbox) for minimal clutter and memory footprint
+- **Cursor hiding** - if you leave a mouse plugged in, the cursor is hidden after a brief period of inactivity
+- **Based on Raspbian Lite** - if you want to add your own tweaks, all the expected packages are one `apt-get` away
+- **Batteries included** - TBA
+
 
 ## Getting started
 
