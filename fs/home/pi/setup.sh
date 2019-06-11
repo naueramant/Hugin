@@ -7,7 +7,7 @@ if [ -z "$(command -v raspi-config)" ]; then
 fi
 
 # Add node 11 repo
-curl -sL https://deb.nodesource.com/setup_11.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 
 # Install dependencies
 apt update
@@ -44,6 +44,6 @@ proc            /proc           proc    defaults          0       0
 /dev/mmcblk0p2  /               ext4    defaults,noatime  0       1
 EOL
 
-# Goodbye (delete setup.sh)
+# Goodbye (delete this script)
 rm -- "$0"
 exit

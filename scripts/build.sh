@@ -70,6 +70,8 @@ sudo mkdir -p $MNT_POINT
 sudo mount $LOOP_DEV"p2" $MNT_POINT
 sudo mount $LOOP_DEV"p1" $MNT_POINT/boot
 
+sleep 2
+
 # Copy root dir into image
 cp ./fs/* $MNT_POINT -r
 
@@ -77,7 +79,7 @@ cp ./fs/* $MNT_POINT -r
 date +%Y-%m-%d > $MNT_POINT/home/pi/.version
 
 # chroot into raspbian and run commands
-sudo systemd-nspawn --bind /usr/bin/qemu-arm-static -qD $MNT_POINT/home/pi/setup.sh
+sudo systemd-nspawn --bind /usr/bin/qemu-arm-static -qD $MNT_POINT /home/pi/setup.sh
 
 # Clean up mounts
 cleanup
